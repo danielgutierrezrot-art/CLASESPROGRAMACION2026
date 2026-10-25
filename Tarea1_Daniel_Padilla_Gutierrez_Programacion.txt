@@ -90,7 +90,7 @@ Ejemplo:
 variable = "Superman"
 color = "azul"
 
-print(f"{super} tiene su traje {color}")
+print(f"{variable} tiene su traje {color}")
 
 Resultado: "Superman tiene su traje azul"
 
