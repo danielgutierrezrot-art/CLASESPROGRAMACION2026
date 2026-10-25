@@ -7,12 +7,12 @@ Probar la función con los ejemplos mostrados y la función assert
 1. isdigit
 Input: un string
 Output: Booleano indicando si el string se compone de puros números
-assert( digito_ono("1234") == True )
-assert( digito_ono("abcd") == False )
-assert( digito_ono("123a") == False )
-assert( digito_ono("12a4") == False )
+assert( isdigit("1234") == True )
+assert( isdigit("abcd") == False )
+assert( isdigit("123a") == False )
+assert( isdigit("12a4") == False )
 
-def digito_ono(texto:str)->bool:
+def isdigit(texto:str)->bool:
     probar=texto.isdigit()
     return probar
 
