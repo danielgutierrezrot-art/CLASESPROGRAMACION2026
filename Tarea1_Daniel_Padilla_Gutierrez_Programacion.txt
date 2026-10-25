@@ -45,7 +45,7 @@ Resultado: 'Hola'
 
  a. count()
 Sirve para contar cuantas veces aparece un elemento, dentro de una secuencia.Ejemplo:
-colores=("rojo", "verde", "rojo", "negro", "azul", "rojo")
+colores="rojo, verde, rojo, negro, azul, rojo"
  colores.count("rojo")
   Resultado: 3
  b. find()
@@ -87,7 +87,7 @@ Primero se crean las variables y se les asigna un valor. Después, al utilizar p
 y las variables se escriben entre llaves en el lugar donde queremos que aparezcan.
 
 Ejemplo:
-super = "Superman"
+variable = "Superman"
 color = "azul"
 
 print(f"{super} tiene su traje {color}")
