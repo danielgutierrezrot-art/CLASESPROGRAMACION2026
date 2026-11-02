@@ -126,15 +126,17 @@ Output: porcentaje de caracteres que son "G" ó "C"
 assert( GCcontent("ATGC") == .5 )
 assert( GCcontent("") == 0 )
 assert( GCcontent("AAAA") == 0 )
-assert( GCcontent("ATgc") == 0 )
+assert( GCcontent("ATgc") == .5 )
 assert( GCcontent("GGCC") == 1 )
 
 
-def GCcontent(cadena):
-   total_bn=len(cadena)
-   if total_bn==0:
-      return 0.0
-   cont = cadena.count('G') + cadena.count('C')
-   return cont / total_bn
+def GCcontent(secuencia):
+    if secuencia == "":
+        return 0
+    contador = 0
+    for letra in secuencia:
+        if letra == "G" or letra == "C" or letra == "g" or letra == "c":
+            contador += 1
+    return contador / len(secuencia)
 
 
