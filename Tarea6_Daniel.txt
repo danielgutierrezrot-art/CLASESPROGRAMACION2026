@@ -7,13 +7,13 @@ Tarea 6.
 
 def agregar(lista, elemento):
     if elemento not in lista:
-        lista.append(elemento)
+        lista.add(elemento)
 # Prueba de la primera función
-numeros = [1, 2, 3, 4]
+numeros = {1, 2, 3, 4}
 agregar(numeros, 3)
 agregar(numeros, 5)
 print(numeros)
-#Resultado [1, 2, 3, 4, 5]
+#Resultado {1, 2, 3, 4, 5}
 
 def agregar_valor(diccionario, llave, valor):
     if llave not in diccionario:
